@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Nunito&display=swap');
+/* CSS RESET  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+
+/* .backgroundvideo {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+} */
+
+
+/* NAVBAR STYLES  */
+
+.navbar {
+    width: 100%;    
+    display: flex;    
+    justify-content: center;
+    align-items: center;  
+    background-color: rgba(51, 51, 51, 0.807); 
+    position: fixed; 
+    top: 0;
+    z-index: 1;
+}
+
+.navbar ul {
+    width: 80%;
+    height: 100%;
+    display: flex;    
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px;
+    /* border-top: 0.75px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 0.75px solid rgba(255, 255, 255, 0.6); */
+    
+}
+
+.navbar li {
+    width: 20%;
+    height: 100%;    
+    list-style-type: none;    
+    font-size: 1.5rem; 
+    font-weight: 900px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li a {
+    display: block;            
+    text-decoration: none;
+    color: #fff;
+    transition: 0.25s;    
+}
+.navbar li a:anylink {
+    color: #fff;
+}
+.navbar li a:hover, .navbar li a:focus {
+    color: rgba(255, 255, 255, 0.794);
+    transform: scale(1.2);
+    font-weight: bolder;
+}
+/* END OF NAVBAR STYLES  */
+
+
+/* HEADER CONTENT STYLES  */
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.499);    
+    color: #fff;
+    display: grid;        
+    justify-items: center;
+    align-items: center;
+}
+
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(homeimages/904496.jpg);
+    background-size: cover;
+}
+
+.headcontent {
+    width: 80%;
+    height: 70%;
+    margin: 15% auto;
+}
+
+.headcontent .contentcontainer {
+    width: 50%;    
+}
+
+.headcontent .contentcontainer .content_quote {
+    font-size: 1.5rem;    
+    letter-spacing: 1px; 
+}
+
+.headcontent .contentcontainer h1 {
+    font-size: 4rem;
+    padding: 10px 0;
+    transition: all 0.2s linear;
+}
+
+.headcontent .contentcontainer h1:hover {
+    -webkit-text-stroke: 0.5px #fff;
+    color: transparent;
+}
+
+.headcontent .contentcontainer .content_text {
+    font-size: 1.25rem;
+}
+
+.headcontent .contentcontainer button {
+    width: 30%;
+    color: #fff;    
+    background-color: red;
+    margin: 30px 0;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.headcontent .contentcontainer button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.headcontent .contentcontainer button a:visited {
+    color: #fff;
+}
+
+
+.headcontent .contentcontainer button:hover {
+    transition: 0.1s;       
+    background-color: rgb(215, 13, 13);
+    transform: scale(1.02);
+}
+
+/* END OF HEADER CONTENT STYLES  */
+
+/* MAIN CONTENT STYLES */
+
+.main {
+    width: 100%;
+    min-height: 600vh;
+}
+
+/* ABOUT SECTION STYLES */
+
+#aboutus {
+    width: 100%;
+    height: 100vh;     
+    border: 1px solid #fff;   
+}
+
+.aboutuscontainer {
+    width: 80%;
+    height: 70vh;
+    margin: 15vh auto;    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ; 
+    grid-auto-rows: 1fr;    
+}
+
+#aboutus .aboutuscontainer .img {
+    background-image: url(homeimages/653606.jpg);
+    background-size: cover;    
+    transition: 0.2s;
+}
+
+#aboutus .aboutuscontainer .img:hover {
+    transform: scale(1.05);
+
+}
+
+#aboutus .aboutuscontainer .content {
+    align-self: center; 
+    padding: 40px;   
+}
+
+#aboutus .aboutuscontainer .content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+#aboutus .aboutuscontainer .content p {    
+    font-size: 1.25rem;
+    opacity: 70%;
+}
+
+#aboutus .aboutuscontainer .content button {
+    width: 30%;
+    color: #fff;    
+    background-color: red;
+    margin: 30px 0;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+#aboutus .aboutuscontainer .content button a {
+    text-decoration: none;
+    color: #fff;    
+}
+
+#aboutus .aboutuscontainer .content button a:visited {
+    color: #fff;
+}
+
+#aboutus .aboutuscontainer .content button:hover {
+    transition: 0.1s;       
+    background-color: rgb(215, 13, 13);
+    transform: scale(1.02); 
+}
+
+/*  END OF ABOUT SECTION STYLES */
+
+/* GALLERY STYLES */
+
+#gallery {
+    width: 100%;
+    max-height: 180vh;
+    border: 1px solid #fff;
+}
+
+#gallery .gallerycontainer {
+    width: 95%;
+    height: 120vh;    
+    margin: 0 auto;   
+}
+
+.gallerycontainer .galleryhead {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.gallerycontainer .galleryhead h1 {
+    font-size: 5rem;
+    letter-spacing: 2px;
+}
+
+.gallerycontainer .galleryhead p {
+    opacity: 70%;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.gallerycontainer .galleryimages {
+    width: 90%;
+    height: 90vh;
+    margin: 5vh auto;    
+}
+
+
+.gallerycontainer .galleryimages .backgroundvideo {
+    width: 100%;
+    height: 100%;
+    border-top: 10px double rgba(51, 51, 51, 0.403);
+    border-bottom: 10px double rgba(51, 51, 51, 0.403);
+    /* position: absolute; */
+    z-index: -1;
+}
+
+/* END OF GALLERY STYLES */
+
+/* MAKE RESERVATION STYLES */
+
+#makereservations {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 20vh;
+    /* border: 1px solid black; */
+    background-image: url(homeimages/888979.jpg);
+    background-size: cover;
+}
+
+.mrcontainer {
+    width: 90%;
+    height: 80vh;
+    /* border: 1px solid white; */
+    margin: 10vh auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;    
+}
+
+.mrcontainer .mrcontent {
+    display: flex;
+    padding-left: 30px;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.mrcontainer .mrcontent h1 {
+    font-size: 4rem;    
+}
+
+.mrcontainer .mrcontent p {
+    font-size: 1.25rem;
+}
+
+.mrcontainer .reservationform {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;  
+}
+
+.mrcontainer .reservationform form {
+    width: 70%;
+    height: 90%;
+    background-color: white;
+}
+
+
+.mrcontainer .reservationform form .inputs {
+    width: 70%;
+    height: 50%;
+    margin: 20% auto 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 45px;
+    gap: 10px;
+}
+
+.mrcontainer .reservationform form input {
+    padding-left: 5px;
+    height: 45px;
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.186);
+}
+
+.mrcontainer .reservationform form button {
+    margin: 0px 25%;
+    width: 50%;
+    height: 50px;    
+    border: 1px solid red;
+    color: #fff;    
+    background-color: red;
+}
+
+.mrcontainer .reservationform form button:hover {    
+    transition: 0.1s;       
+    background-color: rgb(215, 13, 13);
+    transform: scale(1.02); 
+}
+
+/* END OF MAKE RESERVATION STYLES */
+
+/* HEALTHY TIPS STYLES */
+
+#healthytips {
+    width: 100%;
+    height: 180vh;
+    margin: 10vh auto;    
+}
+
+.healthyhead {
+    width: 100%;
+    height: 20vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.healthyhead h1 {
+    font-size: 5rem;    
+}
+
+.healthyhead p {
+    font-size: 1.5rem;
+    opacity: 70%;
+}
+
+.healthycontainer {
+    width: 95%;
+    height: 150vh;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(280px, auto);
+    gap: 32px;
+    grid-template-areas: 
+    "one one two three"
+    "four five five six"
+    "four seven seven eight"
+    "nine seven seven eight"
+}
+
+.healthycontainer section p {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 1.75rem;    
+}
+
+.healthycontainer > section:nth-child(1) {
+    grid-area: one;
+    background-image: url(homeimages/402481.jpg);
+    background-size: cover;
+}
+
+.healthycontainer > section:nth-child(2) {
+    grid-area: two;
+    background-image: url(homeimages/745017.jpg);
+    background-size: cover;    
+}
+
+.healthycontainer > section:nth-child(3) {
+    grid-area: three;
+    background-image: url(homeimages/767257.jpg);
+    background-size: cover;   
+}
+
+.healthycontainer > section:nth-child(4) {
+    grid-area: four; 
+    background-image: url(homeimages/1049210.jpg);
+    background-size: cover;   
+}
+
+.healthycontainer > section:nth-child(5) {
+    grid-area: five; 
+    background-image: url(homeimages/767555.jpg);
+    background-size: cover;   
+}
+
+.healthycontainer > section:nth-child(6) {
+    grid-area: six;
+    background-image: url(homeimages/wp3495563-food-hd-wallpapers.jpg);
+    background-size: cover;    
+}
+
+.healthycontainer > section:nth-child(7) {
+    grid-area: seven;
+    background-image: url(homeimages/767280.jpg);
+    background-size: cover;    
+}
+
+.healthycontainer > section:nth-child(8) {
+    grid-area: eight;
+    background-image: url(homeimages/596343.jpg);
+    background-size: cover;    
+}
+
+.healthycontainer > section:nth-child(9) {
+    grid-area: nine;
+    background-image: url(homeimages/736130.jpg);
+    background-size: cover;  
+}
+
+.tpbackground {
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.516);
+    border-radius: 25px;
+    padding: 40px;
+    transition: 0.2s;
+}
+
+.healthycontainer > section {    
+    border-radius: 25px;  
+    transition: 0.2s;  
+}
+
+.healthycontainer > section:hover {
+    transform: scale(1.1);
+}
+
+.healthycontainer > section:hover .tpbackground {
+    background-color:rgba(0, 0, 0, 0.796);
+}
+
+/* END OF HEALTHY TIPS STYLES */
+
+/* OUR SPECIALS STYLES */
+
+#ourspecials {
+    width: 100%;
+    height: 100vh;
+    margin: 10vh auto;
+    border: 1px solid #fff;
+}
+
+.sphead {
+    width: 100%;
+    height: 20vh;
+    margin: 2.5vh auto;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sphead h1 {
+    font-size: 5rem;        
+}
+
+.sphead p {
+    font-size: 1.3rem; 
+    letter-spacing: 1px; 
+    opacity: 70%;    
+}
+
+.spcontainer {
+    width: 90%;
+    height: 60vh;
+    margin: 5vh auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+
+.spcontainer .spcard {
+    background-color: #fff;
+    border-radius: 25px;
+    
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-auto-rows: minmax(200px, auto);
+    transition: 0.2s;      
+}
+
+.spcontainer .spcard .spimg {
+    border-radius: 25px;
+    transition: 0.2s;    
+}
+
+.spitemname {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    padding: 40px;  
+    transition: 0.2s;  
+}
+
+.spitemname p {
+    color: #fff;
+    font-size: 2rem;    
+    transition: 0.2s;
+}
+
+.spcontainer .spcard .spimg:hover {    
+    transform: scale(1.1);
+}
+
+.spcontainer .spcard .spimg:hover .spitemname {    
+    display: block;
+}
+
+.spcontainer .spcard:nth-child(1) .spimg {
+    background-image: url(homeimages/Pizza.jpg);
+    background-size: cover;    
+}
+
+.spcontainer .spcard:nth-child(2) .spimg {
+    background-image: url(homeimages/793080.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
+.spcontainer .spcard:nth-child(3) .spimg {
+    background-image: url(homeimages/433962.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
+.spcontainer .spcard:nth-child(4) .spimg {
+    background-image: url(homeimages/744357.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
+
+.spcontainer .spcard .spcontent {
+    display: none;
+    padding: 5px 20px;
+}
+
+.spcontainer .spcard .spcontent h2 {
+    margin: 10px 0;
+}
+
+.spcontainer .spcard .spcontent p {
+    opacity: 70%;
+}
+
+
+/* END OF OUR SPECIALS STYLES */
+
+/* END OF MAIN STYLES */
+
+/* FOOTER STYLES */
+
+footer {
+    width: 100%;
+    height: 80vh;
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
+}
+
+footer .top {
+    width: 100%;
+    height: 70vh;    
+}
+
+.tpcontainer {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    margin: 5vh auto;    
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* .tpcontainer > section {
+    border: 1px solid white;
+} */
+
+
+
+footer h2 {
+    width: 100%;
+    /* margin: 0 auto; */
+    height: 20%;
+    font-size: 2rem;    
+}
+
+#contactus h2 {
+    height: 15%;
+    margin: 0 auto;
+
+}
+
+#contactus section {
+    width: 80%;
+}
+
+.contactcard {
+    /* border: 1px solid white; */
+    width: 100%;
+    /* padding-left: 20px; */
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.653);
+}
+
+#contactus li {
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+.openinghours .ohcard {
+    /* border: 1px solid white; */
+    width: 80%;
+    /* padding-left: 20px; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.653); */
+}
+
+.openinghours .ohcard p {
+    font-size: 1.25rem;
+}
+
+
+footer .newsletter p {
+    width: 100%;
+    height: 8%;
+    font-size: 1.2rem;
+}
+
+footer .newsletter input {
+    width: 80%;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 60px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    border: 3px solid #fff;
+    /* border-radius: 25px; */
+}
+
+footer .newsletter button {
+    width: 80%;
+    height: 50px;
+    color: #fff;
+    background-color: #f00;  
+    border: 3px solid #f00;
+    font-weight: 1500px;
+    font-size: 1.2rem;    
+}
+
+
+
+footer .bottom {
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 10vh;  
+    background-color: #333;  
+}
+
+footer .bottom p {
+    font-size: 1.25rem;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+/* END OF FOOTER STYLES */
+
+/* MEDIA QUERIES */
+
+@media(max-width: 700px) {
+
+    .navbar {
+        display: none;
+    }
+    
+}
+
+/* END OF MEDIA QUERIES */
